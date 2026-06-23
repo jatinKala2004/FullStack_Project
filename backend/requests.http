@@ -1,0 +1,15 @@
+
+GET http://localhost:5000/api/notes
+
+###
+
+POST http://localhost:5000/api/notes
+Content-Type: application/json
+
+{
+    "title": "Shopping",
+    "content": "Buy Milk"
+}
+
+###
+DELETE http://localhost:5000/api/notes/1782062149012
