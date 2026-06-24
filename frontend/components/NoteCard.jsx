@@ -9,7 +9,7 @@ export default function NoteCard({ note }) {
   const [showModal, setShowModal] = useState(false);
 
   async function deleteNote() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/notes${note.id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/notes/${note.id}`, {
       method: "DELETE",
     });
 
