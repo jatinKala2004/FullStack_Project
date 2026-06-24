@@ -1,7 +1,7 @@
 import NotesSection from "@/components/NotesSection";
 
 async function getNotes() {
-  const res = await fetch("http://localhost:5000/api/notes", {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/notes`, {
     cache: "no-store",
   });
 

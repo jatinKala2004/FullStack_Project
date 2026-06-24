@@ -12,7 +12,7 @@ export default function CreateNoteForm({ onSuccess, onClose }) {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/api/notes", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/notes`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
